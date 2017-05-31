@@ -1,0 +1,72 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #FF8F1E;
+}
+header img{
+    max-height: 100px;
+    display: inline;
+    position: absolute;
+    margin-left: 22%;
+}
+.menu {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.menu h1{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 55px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s
+}
+.menu a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s
+}
+.menu a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+.menu .backbtn {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    font-size: 30px;
+}
+.menu i{
+    display: inline-block;
+}
+.menu .firstOption{
+    margin-top: 60px;
+} 
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+#main .item{
+    text-align: center;
+}
+#main .owl-theme{
+    width: 80%;
+    margin-left: 10%;
+}
