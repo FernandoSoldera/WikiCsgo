@@ -9,13 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 </head>
 <body>
-	<header>
+	<header class="navbar">
 		<div id="menuMain" class="menu">
 	  		<a href="javascript:void(0)" class="closebtn" onclick="closeMenuMain()">&times;</a>
 	  		<h1>MENU</h1>
-	  		<a href="#" class="firstOption">About</a>
-	  		<a onclick="openMenuWeapons()">Weapons</a>
-	  		<a onclick="openMenuMaps()">Maps</a>
+	  		<a href="index.html" class="firstOption">About</a>
+	  		<a id="weapon" onclick="openMenuWeapons()">Weapons</a>
+	  		<a href="maps.html">Maps</a>
 		</div>
 
 		<div id="menuWeapons" class="menu">
@@ -28,36 +28,29 @@
 			<a href="rifles.html">Rifles</a>
 		</div>
 
-		<div id="menuMaps" class="menu">
-			<a class="fa fa-arrow-left backbtn" onclick="closeMenuMaps()" aria-hidden="true"></a>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeMenuMaps(); closeMenuMain();">&times;</a>
-			<h1>MAPS</h1>
-			<a href="arsenal.html" class="firstOption">Arsenal Maps</a>
-			<a href="assassination.html">Assassination Maps</a>
-			<a href="bomb.html">Bomb Defusal Maps</a>
-			<a href="hostage.html">Hostage Hescue Maps</a>
-		</div>
-
 		<i onclick="openMenuMain()" class="fa fa-bars fa-5x" aria-hidden="true"></i>
 
 		<img src="../IMG/logo.png">
 	</header>
 	
 	<div id="main" class="container">
-	  <div class="owl-carousel owl-theme">
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/aug.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/awp.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/famas.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/galil ar.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><h4>8</h4></div>
-	    <div class="item"><h4>9</h4></div>
-	    <div class="item"><h4>10</h4></div>
-	    <div class="item"><h4>11</h4></div>
-	    <div class="item"><h4>12</h4></div>
-	  </div>
+	  <h2>ABOUT</h2>
+	  <article>
+	  	<p>Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment and Valve Corporation. It is the fourth game in the Counter-Strike series, and was released for Microsoft Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, with the Linux version being released in September 2014. Cross-platform multiplayer was planned between Windows, OS X, Linux, and PlayStation 3 players, but was ultimately limited the computer versions because of the difference in update-frequency between systems.</p>
+
+		<p>The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must prevent the bomb from being planted or to rescue the hostages. There are six game modes, all of which have distinct characteristics specific to that mode. Global Offensive has matchmaking support that allows players to play on dedicated Valve servers, as well as allowing members of the community to host their own servers with custom maps and game modes. Global Offensive has a competitive scene, with Valve-sponsored tournaments known as the "Majors" being the premier competitive event for the game.</p>
+
+		<p>Global Offensive received positive reviews from critics. The game was praised for its overall gameplay and faithfulness to the previous iterations in the series. Some of the early features were criticized, and while the console versions received positive reviews, reviewers believed there were obvious differences between the console and PC versions of the game.</p>
+	  </article>
+
+	  <section id="videos" class="container">
+	  	<div class="col-md-6">
+	  		<video src="../IMG/Gifs/1.mp4" autoplay loop></video>
+	  	</div>
+	  	<div class="col-md-6">
+	  		<video src="../IMG/Gifs/2.mp4" autoplay loop></video>
+	  	</div>
+	  </section>
 	</div>
 
 	<script type="text/javascript" src="../JS/jquery.js"></script>

@@ -13,9 +13,9 @@
 		<div id="menuMain" class="menu">
 	  		<a href="javascript:void(0)" class="closebtn" onclick="closeMenuMain()">&times;</a>
 	  		<h1>MENU</h1>
-	  		<a href="#" class="firstOption">About</a>
-	  		<a onclick="openMenuWeapons()">Weapons</a>
-	  		<a onclick="openMenuMaps()">Maps</a>
+	  		<a href="index.html" class="firstOption">About</a>
+	  		<a id="weapon" onclick="openMenuWeapons()">Weapons</a>
+	  		<a href="maps.html">Maps</a>
 		</div>
 
 		<div id="menuWeapons" class="menu">
@@ -28,36 +28,23 @@
 			<a href="rifles.html">Rifles</a>
 		</div>
 
-		<div id="menuMaps" class="menu">
-			<a class="fa fa-arrow-left backbtn" onclick="closeMenuMaps()" aria-hidden="true"></a>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeMenuMaps(); closeMenuMain();">&times;</a>
-			<h1>MAPS</h1>
-			<a href="arsenal.html" class="firstOption">Arsenal Maps</a>
-			<a href="assassination.html">Assassination Maps</a>
-			<a href="bomb.html">Bomb Defusal Maps</a>
-			<a href="hostage.html">Hostage Hescue Maps</a>
-		</div>
-
 		<i onclick="openMenuMain()" class="fa fa-bars fa-5x" aria-hidden="true"></i>
 
 		<img src="../IMG/logo.png">
 	</header>
 	
 	<div id="main" class="container">
-	  <div class="owl-carousel owl-theme">
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/aug.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/awp.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/famas.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/galil ar.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><img src="../IMG/Rifles/ak47.png"></div>
-	    <div class="item"><h4>8</h4></div>
-	    <div class="item"><h4>9</h4></div>
-	    <div class="item"><h4>10</h4></div>
-	    <div class="item"><h4>11</h4></div>
-	    <div class="item"><h4>12</h4></div>
-	  </div>
+		<h2>PISTOLS</h2>
+		<div class="owl-carousel owl-theme imageWeapons">
+	    	<div class="item"><img src="../IMG/Pistols/beretas.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/cz.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/de.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/five.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/glock.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/p250.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/tec.jpg"></div>
+		    <div class="item"><img src="../IMG/Pistols/usp.jpg"></div>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="../JS/jquery.js"></script>

@@ -3,17 +3,40 @@ header{
     height: 100px;
     background-color: #FF8F1E;
 }
+#main h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: #FF8F1E;
+}
+#main #legenda #terror{
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+}
+#main #legenda #ct{
+    background-color: blue;
+    width: 60px;
+    height: 60px;
+}
+#main #legenda h3{
+    display: inline-block;
+    margin-left: 15px;
+}
+@media screen and (max-width: 980px){
 header img{
     max-height: 100px;
     display: inline;
     position: absolute;
-    margin-left: 22%;
+    margin-left: 21%;
 }
 .menu {
     height: 100%; 
     width: 0; 
     position: fixed; 
-    z-index: 1;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: #111;
@@ -53,8 +76,9 @@ header img{
     left: 0;
     font-size: 30px;
 }
-.menu i{
-    display: inline-block;
+header i{
+   margin-left: 10px;
+   margin-top: 10px; 
 }
 .menu .firstOption{
     margin-top: 60px;
@@ -63,10 +87,68 @@ header img{
     transition: margin-left .5s;
     padding: 20px;
 }
+#main p{
+    font-size: 24px;
+}
 #main .item{
     text-align: center;
 }
-#main .owl-theme{
+#main .imageWeapons{
     width: 80%;
-    margin-left: 10%;
+    margin-left: 11%;
+}
+#main #legenda{
+    margin-top: 100px;
+}
+#main #legenda h1{
+    color: orange;
+    margin-bottom: 28px;
+}
+#main #videos{
+    padding-left: 105px;
+}
+}
+
+@media screen and (min-width: 981px){
+    header .fa, h1, .closebtn, backbtn{
+        display: none;
+    }
+header img{
+    max-height: 100px;
+    position: absolute;
+    left: 5%;
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+}
+#menuMain{
+    right: 18%;
+    top: 63px;
+}
+#menuMain a{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: "Georgia", "Palatino", serif;
+    text-decoration: none;
+}
+#menuWeapons{
+    right: 13%;
+    top: 100px;
+
+}
+#menuWeapons a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+#main .imageWeapons{
+    width: 35%;
+    margin-left: 32.5%;
+}
 }
